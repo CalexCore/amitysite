@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #fec503;
+  color:  #8585e0;
 }
 
 .text-primary {
@@ -691,5 +691,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: ##8c8cd9;
 }
