@@ -4,8 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes
-    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -36,16 +35,12 @@
       .navbar-custom {
         background:linear-gradient(to left, #8b86a3, #322e40); ;
       }
-      .btn-custom {
-        color: #fff;
-        background-color: #0495c9;
-        border-color: #357ebd; 
+      .modal p {
+    word-wrap: break-word;
       }
-      .btn-custom:hover, .btn-custom:focus, .btn-custom:active, .btn-custom.active, .open>.dropdown-toggle.btn-custom {
-        color: #fff;
-        background-color: #00b3db;
-        border-color: #285e8e; 
-      }
+      .button-primary:hover{
+     background: #383;
+     }
     </style>
 
   </head>
@@ -53,9 +48,8 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
-     
+      <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: white; font-family: 'Montserrat', sans-serif;">AmityCoin</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation" style="background-color: #322e40;">
           Menu
@@ -89,9 +83,9 @@
             </li>
           </ul>
         </div>
-      
+      </div>
     </nav>
-</div>
+
     <!-- Header -->
     <header class="masthead">
       <div class="container">
@@ -311,15 +305,46 @@
       </div>
     </section>
    
-    <section id="donate">
+    <!-- section id="donate">
        <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large" style="font-weight: bold; font-size: 35px; color:#322e40;">If you would like to donate to the project <br> please use any of the methods below.</p> 
-            <p style="font-family: 'Montserrat', sans-serif";>TRTL: TRTLuwoBbZb9SyHyEjrbEiYpFQpgTviwj6bPAcd8jbnpBwY2bdqqjw7UDwPSja2afeg5urGXkVp5SAX8NCCLia6DhVoTmsWPg2U <br> <br> AMIT: amitWnmgfgYG4XerZGPLNFd5AM87rUkb3X2q4FcELpPsB4DXtT8YE3mETzAjrYLdDH39pJoCxSUHPU2yqZeY1RsJ1h5DgikVAz</p>
+            <p class="mx-auto text-center" style="font-family: 'Montserrat', sans-serif;">TRTL: TRTLuwoBbZb9SyHyEjrbEiYpFQpgTviwj6bPAcd8jbnpBwY2bdqqjw7UDwPSja2afeg5urGXkVp5SAX8NCCLia6DhVoTmsWPg2U <br> <br> AMIT: amitWnmgfgYG4XerZGPLNFd5AM87rUkb3X2q4FcELpPsB4DXtT8YE3mETzAjrYLdDH39pJoCxSUHPU2yqZeY1RsJ1h5DgikVAz</p>
           </div>
         </div>
-    </section>
+    </section -->
 
+    <!-- Button trigger modal -->
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+<button type="button" class="btn text-center" data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#322e40; border-color: #322e40; color: white;">
+  Donate to the project!
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Donation Addresses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background-color:#322e40; border-color: #322e40">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <p class="mx-auto text-center" style="font-family: 'Montserrat', sans-serif;">TRTL: TRTLuwoBbZb9SyHyEjrbEiYpFQpgTviwj6bPAcd8jbnpBwY2bdqqjw7UDwPSja2afeg5urGXkVp5SAX8NCCLia6DhVoTmsWPg2U <br> <br> AMIT: amitWnmgfgYG4XerZGPLNFd5AM87rUkb3X2q4FcELpPsB4DXtT8YE3mETzAjrYLdDH39pJoCxSUHPU2yqZeY1RsJ1h5DgikVAz</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 
     
