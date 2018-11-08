@@ -183,7 +183,7 @@ body {
     z-index: 999999999;
   }
   body {
-    background-image: none;
+    background-color: black;
     height: 750px;
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
