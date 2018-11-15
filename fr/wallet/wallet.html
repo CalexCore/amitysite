@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AmityCoin Wallet Generator</title>
+    <title>G&eacute;n&eacute;rateur Portefueille AmityCoin</title>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
 
@@ -87,49 +87,49 @@
 
 				<div class="columns noprint">
 					<div class="column is-12 notification is-danger has-text-centered noprint">
-						<p class="noprint">Anything on this page in a pink colored box is <u><b>secret</u></b> and should not be shared!</p>
+						<p class="noprint">Toute informations sur cette page qui sont dans une boite rose, sont <u><b>secret</u></b> et ne devront pas &ecirc;tre partager</p>
 					</div>
 				</div>
 
 				<div class=" has-text-centered" style="margin:50px 0 50px 0;">
 					<img src="./assets/img/logo.png" width="150" height="" />
-					<h1 class="subtitle is-size-5" style="margin-top:20px;">AmityCoin Wallet Generator</h1>
+					<h1 class="subtitle is-size-5" style="margin-top:20px;">G&eacute;n&eacute;rateur Portefueille AmityCoin</h1>
 					<hr>
 				</div>
 
 				<div class="columns">
 					<div class="column is-12 noprint has-text-centered">
 
-						<button class="button is-dark d-print-noe" onclick="js:show_generate();" type="button" value="Generate a wallet">Create a Wallet</button> or
-						<button class="button is-dark noprint" onclick="js:show_restore();" type="button" value="restore keys from seed phrase">Restore keys from seed phrase</button>
+						<button class="button is-dark d-print-noe" onclick="js:show_generate();" type="button" value="Generate a wallet">G&eacute;n&eacute;rer une portefueille</button> or
+						<button class="button is-dark noprint" onclick="js:show_restore();" type="button" value="restore keys from seed phrase">Restorer les clefs des phrase de d&eacute;part </button>
 
 						<div id="generate" style="display:none;">
 
-							<p class="noprint" style="margin-top: 20px;">For extra security, type a few random letters, words, numbers, or symbols below.</p>
+							<p class="noprint" style="margin-top: 20px;">Pour plus de s&eacute;curit&eacute; tap des lettres, mots, nombres et symbols si-desous</p>
 
 							<hr>
 
 							<div>
-								<input id="user_entropy_widget" class="input" type="text" style="width:100%;" placeholder=" The more random stuff you type in this box, the better your keys will be." />
+								<input id="user_entropy_widget" class="input" type="text" style="width:100%;" placeholder=" Le plus de chose que tu tap, le plus s&eacute; que sera votre clef." />
 							</div>
 
 							<hr>
 
 							<div>
-								<button class="button is-black" onclick="js:genwallet(null);" type="button" value="Generate wallet">Generate</button>
+								<button class="button is-black" onclick="js:genwallet(null);" type="button" value="Generate wallet">G&eacute;n&eacute;rer</button>
 							</div>
 
 						</div>
 
 						<div id="restore" style="display: none;">
 							<div>
-								<input id="seed_phrase" class="input" type="text" style="width:100%;" value="" placeholder="Enter your seed phrase words here."/>
+								<input id="seed_phrase" class="input" type="text" style="width:100%;" value="" placeholder="Entrer votre phrase de d&eacute;part ici."/>
 							</div>
 
 							<hr>
 
 							<div class="has-text-centered">
-								<button class="button is-dark" onclick="js:restore_keys(null);" type="button" value="Restore keys">Restore Keys</button>
+								<button class="button is-dark" onclick="js:restore_keys(null);" type="button" value="Restore keys">R&eacute;storer vos clefs</button>
 							</div>
 						</div>
 					</div>
@@ -139,7 +139,7 @@
 					<div  class="column is-12 d-print-block">
 						<h3 class="subtitle is-size-5 d-print-block">Public Address</h3>
 						<div class="notification is-info">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="address_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="address_widget">G&eacute;n&eacute;ration en progress ...</span>
 						</div>
 					</div>
 				</div>
@@ -148,7 +148,7 @@
 					<div class="column is-12">
 						<h3 class="subtitle is-size-5 d-print-block">Seed Phrase</h3>
 						<div class="notification is-danger">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="mnemonic_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="mnemonic_widget">G&eacute;n&eacute;ration en progress  ...</span>
 						</div>
 
 					</div>
@@ -160,19 +160,19 @@
 
 						<h3 class="subtitle is-size-5 d-print-block">View Key</h3>
 						<div class="notification is-danger">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="view_key_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="view_key_widget">G&eacute;n&eacute;ration en progress  ...</span>
 						</div>
 
 						<h3 class="subtitle is-size-5 d-print-block">Spend Key</h3>
 						<div class="notification is-danger">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="spend_key_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="spend_key_widget">G&eacute;n&eacute;ration en progress  ...</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="columns">
 					<div class="column is-12 noprint has-text-centered">
-						<input type="button" onClick="window.print()" class="button is-black" value="Print This Page"/>
+						<input type="button" onClick="window.print()" class="button is-black" value="Imprimer cette page"/>
 					</div>
 				</div>
 			</div>
@@ -232,10 +232,10 @@
   <div class="instruction-text">
     <ul>
       <li>
-        To deposit funds to this Amity paper wallet: send AMIT to the <b>public</b> address
+	Pour d&eacute;posser des fonds a cette portefuille: envoie AMIT a l'address <b>publique</b>
       </li>
       <li>
-        <b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance of this wallet to a Amity client
+        <b>NE R&Eacute;V&Eacute;LER JAMAIS LE CLEF PRIV&Eacute;E</b> avant d'&ecirc;tre pret a import&eacute; las balance de cette portefuille a le client Amity
       </li>
     </ul>
   </div>
