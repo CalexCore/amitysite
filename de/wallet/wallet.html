@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <title>AmityCoin Wallet Generator</title>
     <meta charset="UTF-8">
@@ -87,7 +87,7 @@
 
 				<div class="columns noprint">
 					<div class="column is-12 notification is-danger has-text-centered noprint">
-						<p class="noprint">Anything on this page in a pink colored box is <u><b>secret</u></b> and should not be shared!</p>
+						<p class="noprint">Alles auf dieser Seite innerhalb einer pink gefärbten Box ist <u><b>Geheim</u></b> und sollte nicht geteilt werden!</p>
 					</div>
 				</div>
 
@@ -100,8 +100,8 @@
 				<div class="columns">
 					<div class="column is-12 noprint has-text-centered">
 
-						<button class="button is-dark d-print-noe" onclick="js:show_generate();" type="button" value="Generate a wallet">Create a Wallet</button> or
-						<button class="button is-dark noprint" onclick="js:show_restore();" type="button" value="restore keys from seed phrase">Restore keys from seed phrase</button>
+						<button class="button is-dark d-print-noe" onclick="js:show_generate();" type="button" value="Generate a wallet">Wallet erstellen</button> or
+						<button class="button is-dark noprint" onclick="js:show_restore();" type="button" value="restore keys from seed phrase">Wiederherstellen von Schlüsseln aus der Seed-Phrase</button>
 
 						<div id="generate" style="display:none;">
 
@@ -110,26 +110,26 @@
 							<hr>
 
 							<div>
-								<input id="user_entropy_widget" class="input" type="text" style="width:100%;" placeholder=" The more random stuff you type in this box, the better your keys will be." />
+								<input id="user_entropy_widget" class="input" type="text" style="width:100%;" placeholder=" Je mehr zufällige Zeichen Sie in diese Box tippen, desto sicherer werden Ihre Schlüssel." />
 							</div>
 
 							<hr>
 
 							<div>
-								<button class="button is-black" onclick="js:genwallet(null);" type="button" value="Generate wallet">Generate</button>
+								<button class="button is-black" onclick="js:genwallet(null);" type="button" value="Generate wallet">Erstellen</button>
 							</div>
 
 						</div>
 
 						<div id="restore" style="display: none;">
 							<div>
-								<input id="seed_phrase" class="input" type="text" style="width:100%;" value="" placeholder="Enter your seed phrase words here."/>
+								<input id="seed_phrase" class="input" type="text" style="width:100%;" value="" placeholder="Geben Sie hier Ihre Seed Phrase Wörter ein."/>
 							</div>
 
 							<hr>
 
 							<div class="has-text-centered">
-								<button class="button is-dark" onclick="js:restore_keys(null);" type="button" value="Restore keys">Restore Keys</button>
+								<button class="button is-dark" onclick="js:restore_keys(null);" type="button" value="Restore keys">Sclüssel wiederherstellen</button>
 							</div>
 						</div>
 					</div>
@@ -137,9 +137,9 @@
 
 				<div class="columns" id="step2" style="display:none;">
 					<div  class="column is-12 d-print-block">
-						<h3 class="subtitle is-size-5 d-print-block">Public Address</h3>
+						<h3 class="subtitle is-size-5 d-print-block">Öffentlichec Adresse</h3>
 						<div class="notification is-info">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="address_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="address_widget">Erstellung ...</span>
 						</div>
 					</div>
 				</div>
@@ -148,7 +148,7 @@
 					<div class="column is-12">
 						<h3 class="subtitle is-size-5 d-print-block">Seed Phrase</h3>
 						<div class="notification is-danger">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="mnemonic_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="mnemonic_widget">Erstellung ...</span>
 						</div>
 
 					</div>
@@ -165,14 +165,14 @@
 
 						<h3 class="subtitle is-size-5 d-print-block">Spend Key</h3>
 						<div class="notification is-danger">
-							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="spend_key_widget">Generating ...</span>
+							<span style="font-family: monospace, monospace; word-wrap: break-word;" id="spend_key_widget">Erstellung ...</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="columns">
 					<div class="column is-12 noprint has-text-centered">
-						<input type="button" onClick="window.print()" class="button is-black" value="Print This Page"/>
+						<input type="button" onClick="window.print()" class="button is-black" value="Diese Seite Drucken"/>
 					</div>
 				</div>
 			</div>
@@ -183,8 +183,8 @@
 				<div class="columns">
 
           				<div class="column has-text-center">
-            					Note: All generation is done client side, and no information is sent to the server <br>
-            					<a href="https://github.com/CalexCore/PaperWallet" class="button is-light"> [CLICK FOR SOURCE CODE] It is 100% open-source and licensed under the GPL 3.0 License <br> Credit For Paper Wallet goes to Watt3r</a>
+            					Note: Die ganze Erstellung wird auf Ihrem Rechner ausgeführt, und keine Informationen werden zum Server gesendet <br>
+            					<a href="https://github.com/CalexCore/PaperWallet" class="button is-light"> [CLICK FOR SOURCE CODE] It is 100% open-source and licensed under the GPL 3.0 License <br> Besondere Anerkennung fürdie Paper Wallet geht an Watt3r</a>
           				</div>
 
 					<div class="column is-6 has-text-right">
@@ -232,10 +232,10 @@
   <div class="instruction-text">
     <ul>
       <li>
-        To deposit funds to this Amity paper wallet: send AMIT to the <b>public</b> address
+        Um Geld in diese Papierbörse von Amity einzuzahlen: Senden Sie AMIT an diese <b>public</b> Adresse
       </li>
       <li>
-        <b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance of this wallet to a Amity client
+        <b>DEN PRIVATEN SCHLÜSSEL NICHT PREISGEBEN</b> bis Sie bereit sind, das Guthaben dieser Wallet in einen Amity-Client zu importieren.
       </li>
     </ul>
   </div>
